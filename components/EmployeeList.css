@@ -1,0 +1,24 @@
+.employee-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+}
+
+label span {
+    margin-right: 10px;
+}
+
+.pgn-button {
+    margin-right: 5px;
+}
