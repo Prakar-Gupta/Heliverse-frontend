@@ -6,7 +6,7 @@ const EmployeeCard = ({ employee }) => {
     const addToTeam = async () => {
         try {
             // Make the API call using Axios
-            const response = await axios.post('http://localhost:3000/api/addUserToTeam', { userId: employee.id, avatar: employee.avatar });
+            const response = await axios.post('https://heliverse-backend-zeta.vercel.app/api/addUserToTeam', { userId: employee.id, avatar: employee.avatar });
             // Assuming the API returns a success message
             alert(response.data.message);
         } catch (error) {

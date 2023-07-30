@@ -20,7 +20,7 @@ const TeamPage = () => {
         const enteredTeamName = window.prompt('Enter team name:');
         if (enteredTeamName) {
             try {
-                const response = await axios.post('http://localhost:3000/api/team', {
+                const response = await axios.post('https://heliverse-backend-zeta.vercel.app/api/team', {
                     team_name: enteredTeamName,
                 });
                 console.log('Team created successfully:', response.data);
@@ -34,7 +34,7 @@ const TeamPage = () => {
     useEffect(() => {
         const fetchTeams = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/api/team');
+                const response = await axios.get('https://heliverse-backend-zeta.vercel.app/api/team');
                 setTeams(response.data);
             } catch (error) {
                 console.error('Error fetching teams:', error);
